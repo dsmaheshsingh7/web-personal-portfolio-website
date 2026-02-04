@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  font-family: sans-serif;
+  color: #a0a0a0;
+  line-height: 1.6;
+}
+
+.main-container {
+  display: grid;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+}
+
+
+
+/* Left Sidebar */
+
+.left-sidebar {
+  background-color: rgb(38, 77, 101);
+  border: 1px solid #3a3a3a;
+  border-radius: 16px;
+  padding: 40px;
+  height: fit-content;
+}
+
+/* (A) Profile Section */
+.profile {
+  text-align: center;
+}
+
+
+.profile img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid #3a3a3a;
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #e0e0e0;
+}
+
+.profile p {
+  background-color: #1e1e1e;
+  padding: 5px 15px;
+  color: #ffbf00;
+  border: 1px solid #3a3a3a;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+
+/* (B) Contact Section */
+
+.contact {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item i {
+  width: 22px;
+  text-align: center;
+  font-size: 1rem;
+  color: #ffbf00;
+}
+
+.contact-item span {
+  word-break: break-word;
+}
+
+
+/* (C) Certificates Section */
+
+#certificate {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.cert-item:last-child {
+  border-bottom: none;
+}
+
+.cert-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+.cert-left i {
+  color: #ffbf00;
+  font-size: 1.1rem;
+  width: 22px;
+  text-align: center;
+}
+
+/* Button */
+.cert-item button {
+  background-color: transparent;
+  color: #38bdf8;
+  border: 1px solid #38bdf8;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cert-item button:hover {
+  background-color: #38bdf8;
+  color: #1e1e1e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Right Sidebar */
+
+.right-sidebar {
+  background-color: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+
+
+/* (A) Navigationbar Section */
+
+#navigation {
+  border-bottom: 2px solid #3a3a3a;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: #fefafa;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover{
+  color: rgb(251, 251, 5);
+}
+
+
+
+/* (B) About me Section */
+#about {
+  margin-bottom: 40px;
+}
+
+.heading {
+  color: #e0e0e0;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.line{
+  width: 70px;
+  height: 5px;
+  background-color: yellow;
+  margin-bottom: 15px;
+}
+
+.content {
+  text-align: justify;
+  color: #a0a0a0;
+}
+
+
+
+/* (C) MY SKILLS Section */
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+  gap: 40px;
+}
+
+.item {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #3a3a3a;
+  background-color: #1e1e1e;
+  text-align: center;
+  margin-top: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.item img {
+  height: 50px;
+  width: 50px;
+  filter: invert(75%) sepia(50%) saturate(1000%) hue-rotate(350deg) brightness(110%) contrast(101%);
+  margin-bottom: 15px;
+}
+
+.item h3{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+
+
+/* (C) Education Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*This is Mobile Responsive Code */
+@media (max-width: 768px) {
+
+  body {
+    padding: 12px;
+  }
+
+  .main-container {
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+
+  .left-sidebar,
+  .right-sidebar {
+    width: 100%;
+    padding: 24px;
+  }
+
+  nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 16px;
+  }
+
+  nav a {
+    flex-shrink: 0;
+  }
+}
