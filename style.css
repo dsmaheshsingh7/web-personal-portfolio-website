@@ -114,6 +114,11 @@ body {
   border-radius: 12px;
 }
 
+#certificate button a {
+text-decoration: none;
+color: yellow;
+}
+
 .cert-item {
   display: flex;
   align-items: center;
@@ -396,6 +401,7 @@ nav a:hover{
     flex-shrink: 0;
   }
 }
+
 
 
 
