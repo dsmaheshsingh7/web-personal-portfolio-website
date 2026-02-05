@@ -25,11 +25,12 @@ body {
 /* Left Sidebar */
 
 .left-sidebar {
-  background-color:#2a3f64;
-  border: 1px solid #3a3a3a;
+  background: linear-gradient(180deg, #20242b, #15191f);
   border-radius: 16px;
-  padding: 40px;
+  padding: 22px;
   height: fit-content;
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.45);
 }
 
 /* (A) Profile Section */
@@ -190,10 +191,11 @@ color: yellow;
 /* Right Sidebar */
 
 .right-sidebar {
-  background-color: #2a3f64;
-  border: 1px solid #3a3a3a;
+  background: linear-gradient(180deg, #20242b, #101418);
   border-radius: 16px;
-  padding: 40px;
+  padding: 26px;
+  border: 1px solid rgba(255,255,255,0.07);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.45);
 }
 
 
@@ -401,6 +403,7 @@ nav a:hover{
     flex-shrink: 0;
   }
 }
+
 
 
 
